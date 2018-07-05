@@ -1,5 +1,5 @@
-module.exports = function () {
-  function({ addUtilities, config }) {
+module.exports = function() {
+  return function({ addUtilities, config }) {
     let textSizes = config('textSizes')
     let fonts = config('fonts')
     let foutUtilities = Object.keys(fonts).map(fontName => {
@@ -7,9 +7,7 @@ module.exports = function () {
       for (const size of Object.keys(textSizes)) {
         fontSet.push({
           [`.text-${size}-${fontName}`]: {
-            fontSize: `calc(${
-              textSizes[size]
-            } * var(--font-loading-size-modifier-${fontName}, 1))`,
+            fontSize: `calc(${textSizes[size]} * var(--font-loading-size-modifier-${fontName}, 1))`,
           },
         })
       }

@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcss-fout-size",
+  "version": "1.0.0",
+  "description": "This plugin adds fontface-specific text sizing utilities which change size once typekit (or other) fonts have loaded.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeldbirch/tailwindcss-fout-size.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tailwind",
+    "plugin",
+    "tailwind plugin"
+  ],
+  "author": {
+    "name": "Joel Birch",
+    "email": "joeldbirch@gmail.com"
+  },
+  "license": "MIT"
+}
